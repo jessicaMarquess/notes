@@ -1,6 +1,7 @@
 import LogoNlw from './assets/logo-nlw.svg'
 import NewNoteCard from './components/new-note-card'
 import NoteCard from './components/note-card'
+import { Toaster } from 'sonner'
 
 function App() {
   return (
@@ -19,11 +20,11 @@ function App() {
 
       <div className='grid grid-cols-3 auto-rows-[250px] gap-6'>
         <NewNoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
+        <NoteCard note={{
+          date: new Date(),
+          content: 'guygefguyagfu uefhuiafef fuahfihaiufhuiahfui bfahgbdfuahdiahdaudh dahdiuahudhaudha guygefguyagfu uefhuiafef fuahfihaiufhuiahfui bfahgbdfuahdiahdaudh dahdiuahudhaudha guygefguyagfu uefhuiafef fuahfihaiufhuiahfui bfahgbdfuahdiahdaudh dahdiuahudhaudha guygefguyagfu uefhuiafef fuahfihaiufhuiahfui bfahgbdfuahdiahdaudh dahdiuahudhaudha'
+        }} />
+        <Toaster richColors />
       </div>
     </div>
   )
